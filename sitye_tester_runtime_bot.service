@@ -1,0 +1,12 @@
+[Unit]
+Description=Testing rubexgroup.ru site runtime bot
+After=multi-user.target
+
+[Service]
+User=user
+Type=simple
+Restart=always
+ExecStart=/home/user/siteTester/.venv/bin/python /home/user/siteTester/main.py
+
+[Install]
+WantedBy=multi-user.target
