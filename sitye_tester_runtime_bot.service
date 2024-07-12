@@ -6,6 +6,7 @@ After=multi-user.target
 Type=simple
 Restart=always
 ExecStart=/home/user/siteTester/.venv/bin/python /home/user/siteTester/main.py
+WorkingDirectory=/home/user/siteTester
 
 [Install]
 WantedBy=multi-user.target
