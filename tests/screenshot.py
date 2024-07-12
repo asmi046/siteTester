@@ -11,7 +11,7 @@ def get_file_name(url):
 
 async def get_screenshot(url="http://playwright.dev"):
     async with async_playwright() as p:
-        # os.makedirs('scrinshots', exist_ok=True)
+        os.makedirs('scrinshots', exist_ok=True)
 
         browser = await p.chromium.launch()
         page = await browser.new_page()
