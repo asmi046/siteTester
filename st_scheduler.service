@@ -1,0 +1,12 @@
+[Unit]
+Description=Testing rubexgroup.ru site scheduler
+After=multi-user.target
+
+[Service]
+User=user
+Type=simple
+Restart=always
+ExecStart=/home/user/siteTester/.venv/bin/python /home/user/siteTester/scheduler.py
+
+[Install]
+WantedBy=multi-user.target
